@@ -37,18 +37,27 @@ SayHey({
     name: 'John'
 });
 
-
-// Inerfaces extend from a type or other interface work like classes
-interface Employer extends Person {
-    department: string;
-    EmpCode: number;
+type Dreams = {
+    title: string
 }
 
-let employer1: Employer = {
+// Inerfaces extend from a type or other interface work like classes
+// Gennircs
+interface Employer<Type> extends Person {
+    department: string;
+    EmpCode: number;
+    dream: Type[];
+}
+
+let employer1: Employer<Dreams> = {
     id: "221",
     name: "",
     department: "",
-    EmpCode: 21
+    EmpCode: 21,
+    dream: [{ title: "travel the world" }]
 }
 console.log(employer1);
+
+
+
 
