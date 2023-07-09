@@ -1,4 +1,4 @@
-import { TypePost } from "./types/Typepost"
+import TypePost from "./types/Typepost"
 
 function Post({title,body}:TypePost) {
     return (

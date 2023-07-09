@@ -1,5 +1,7 @@
-export type TypePost = {
-    id:number;
-    title:string;
-    body:string
+type TypePost = {
+    id: number;
+    title: string;
+    body: string
 }
+
+export default TypePost
