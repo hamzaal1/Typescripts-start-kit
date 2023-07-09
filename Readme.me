@@ -1,74 +1,18 @@
-```typescript
-let hello: string | number = "number or String";
-```
-This line declares a variable named `hello` that can hold either a string or a number value.
+# TypeScript Code Description
 
-```typescript
-let exist: boolean;
-```
-This line declares a variable named `exist` of type boolean.
+This repository contains TypeScript code snippets that demonstrate various concepts and features of the language.
 
-```typescript
-let hobbies = ["coding", "cooking", "swimming"];
-```
-This line declares an array variable named `hobbies` that contains strings representing different hobbies.
+## File Description
 
-```typescript
-let skills: any;
-```
-This line declares a variable named `skills` of type `any`, which means it can hold any type of value.
+### `index.ts`
 
-```typescript
-let multi: (string | number)[] = [];
-```
-This line declares an array variable named `multi` that can hold values of type string or number.
+This file showcases the following code snippets:
 
-```typescript
-type Person = {
-    id: string;
-    name: string;
-    phone?: number;
-}
-```
-This block defines a type `Person` that represents an object with properties `id`, `name`, and an optional property `phone`.
+- Declaration of variables with multiple types using union types.
+- Declaring and initializing arrays with specific types.
+- Defining types and interfaces to represent objects with specific properties.
+- Creating functions with parameter types and return types.
+- Usage of generics to create reusable interfaces.
+- Example usage of the defined types and interfaces.
 
-```typescript
-const sayHey = (user: Person): void => {
-    console.log("Hello ", user.name);
-}
-```
-This block defines a function `sayHey` that takes a parameter `user` of type `Person` and logs a greeting message to the console.
-
-```typescript
-type Dreams = {
-    title: string
-}
-```
-This block defines a type `Dreams` that represents an object with a property `title` of type string.
-
-```typescript
-interface Employer<T> extends Person {
-    department: string;
-    empCode: number;
-    dream: T[];
-}
-```
-This block defines an interface `Employer<T>` that extends the `Person` type and adds properties `department`, `empCode`, and `dream`, where `dream` is an array of type `T`.
-
-```typescript
-let employer1: Employer<Dreams> = {
-    id: "221",
-    name: "",
-    department: "",
-    empCode: 21,
-    dream: [{ title: "travel the world" }]
-}
-```
-This line declares a variable `employer1` of type `Employer<Dreams>`, which represents an object with properties defined in `Employer` interface, and assigns an example object to it.
-
-```typescript
-console.log(employer1);
-```
-This line logs the `employer1` object to the console.
-
-The code includes variable declarations, type definitions, an interface, a function, and an example usage. It demonstrates the usage of union types, arrays, optional properties, generics, and interfaces in TypeScript.
+## Get Started
